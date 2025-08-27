@@ -409,4 +409,3 @@ jacoco.xml
 # Certificats auto-signés (ne pas versionner)
 /ssl/
 /certs/
-
