@@ -1,10 +1,7 @@
 git add .
 
 git commit -m "
-initialisation du projet avec les fichiers:
-- push.sh --> vers git
-- .gitignore --> ignorer certains fichiers
-- README --> explciation
+les 3 projets à faire
 "
 
 git push gitea
