@@ -1,7 +1,7 @@
 git add .
 
 git commit -m "
-les 3 projets à faire
+initialisation du backend
 "
 
 git push gitea
