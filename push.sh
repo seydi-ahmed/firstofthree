@@ -1,7 +1,7 @@
 git add .
 
 git commit -m "
-structure de base
+Task.java complet et compris
 "
 
 git push gitea

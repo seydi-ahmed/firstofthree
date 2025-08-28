@@ -1,5 +1,5 @@
 package com.example.service;
 
-public class TaskService {
+public class TaskRepository {
     
 }

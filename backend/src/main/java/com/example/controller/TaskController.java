@@ -1,4 +1,4 @@
-package com.example.controler;
+package com.example.controller;
 
 public class TaskController {
     
