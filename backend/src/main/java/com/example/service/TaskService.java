@@ -2,9 +2,12 @@ package com.example.service;
 
 import java.util.*;
 
+import org.springframework.stereotype.Service;
+
 import com.example.model.Task;
 import com.example.repository.TaskRepository;
 
+@Service
 public class TaskService {
     private final TaskRepository taskRepository;
 
@@ -30,5 +33,10 @@ public class TaskService {
     // supprimer une tache
     public void deleteTask(Long id){
         taskRepository.deleteById(id);
+    }
+
+    // supprimer toutes les taches
+    public void deleteTasks(){
+        taskRepository.deleteAll();
     }
 }

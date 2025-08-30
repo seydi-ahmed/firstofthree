@@ -33,19 +33,26 @@ public class TaskController {
     }
 
     // mettre à jour
+    @PutMapping("/{id}")
     public Task updTask(@PathVariable Long id, @RequestBody Task updatedTask){
         Task task = taskService.getTaskById(id).orElse(null);
         if (task != null){
             task.setName(updatedTask.getName());
             task.setDescription(updatedTask.getDescription());
-            return updatedTask;
+            return taskService.saveTask(task);
         }
         return null;
     }
 
     // supprimer une tache
-    @PutMapping("/{id}")
+    @DeleteMapping("/{id}")
     public void deleteTask(@PathVariable Long id){
         taskService.deleteTask(id);
+    }
+
+    // supprimer toutes les taches
+    @DeleteMapping
+    public void deleteTasks(){
+        taskService.deleteTasks();
     }
 }
